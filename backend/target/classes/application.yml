@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/storage_system
+    username: root
+    password: newbee
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 3 # 指定使用redis的三号数据库。
+
+server:
+  port: 8881
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和蛇形命名的映射！
